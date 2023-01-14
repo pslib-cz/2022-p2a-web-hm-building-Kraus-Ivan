@@ -31,51 +31,91 @@ img {
 }
 
 
-.navigation {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    gap: 10px;
-    list-style: none;
-}
 
-.navigation a {
-    text-decoration: none;
-    color: white;
-}
-
-menu {
-    list-style: none;
-    display: grid;
-    position: absolute;
-    background-color: #EB6C27;
-    width: 75%;
-    top: 75px;
-    /*transform: translateY(-100%);*/
-    z-index: -1;
-    transition: .6s;
-}
-
-.navigation__toggler {
-    display: grid;
-}
 
 /*
-.navigation__toggler {
+nav *{
+    color: white;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 75px;
+    background: white;
+}
+
+nav .logo {
+    padding: 2em;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    background-color: #EB6C27;
+}
+
+.nav-link {
+    color: #f1f1f1;
+    font-weight: 500;
+}
+
+.navbar-toggler {
     display: none;
     height: min-content;
+    margin-top: 2em;
+    margin-right: 0.5em;
     cursor: pointer;
+}
+
+.navbar-toggler .bar {
+    width: 46px;
+    height: 8px;
+    margin-bottom: 7px;
+    background: #ffffff;
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
+    border-radius: 2px;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+    z-index: 999;
 }
 */
 
-.navigation__toggler .toggler__bar {
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #EB6C27;
-    border-radius: 10%;
-    transition: .4s;
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -96,7 +136,7 @@ menu {
 
 .page_header__title {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2em;
     color: white;
 }
 
@@ -116,7 +156,6 @@ menu {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -138,6 +177,7 @@ menu {
 }
 
 .button--footer {
+    margin: auto;
     padding: 20px 50px;
 }
 
@@ -179,6 +219,11 @@ menu {
 }
 
 
+.services {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .services__item button {
     margin-top: 1em;
 }
@@ -219,11 +264,15 @@ menu {
     font-weight: 700;
     background-position: center;
     background-size: cover;
-    min-height: 4em;
+    min-height: 4.5em;
     padding: 1.5em;
-    padding-right: 7em;
     color: white;
-    margin: 3em 0em;
+}
+
+.confidence__content {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .confidence p:nth-child(2) {
@@ -242,10 +291,13 @@ menu {
 .reference__item--header h2 {
     font-size: 1.5rem;
     margin-right: 5em;
-    text-align: start;
 }
 
 .reference__item--header p {
+    text-align: start;
+}
+
+.reference__item--header h2 {
     text-align: start;
 }
 

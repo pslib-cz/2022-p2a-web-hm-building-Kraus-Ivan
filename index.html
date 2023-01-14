@@ -6,30 +6,58 @@
     <link rel="stylesheet" href="styles.css/normalize.css">
     <link rel="stylesheet" href="styles.css/mains.css">
     <link rel="stylesheet" href="styles.css/mediaphotos.css">
+    <link rel="stylesheet" href="styles.css/medianavbar.css">
+    <link rel="stylesheet" href="styles.css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HM Building</title>
 </head>
 <body>
-    <nav class="navigation">
-        <img src="./images/logo.png" alt="Logo">
 
-        <!--
-        <label class="navigation__toggler">
-            <span class="toggler__bar"></span>
-            <span class="toggler__bar"></span>
-            <span class="toggler__bar"></span>
-        </label>
-        
-
-        <menu>
-            <li><a href=“#“>Text</a>
-            <li><a href=“#“>Text</a>
-            <li><a href=“#“>Text</a>
-        </menu>
-        -->
+    <nav>
+        <ul>
+            <li><a href="#">DOMŮ</a></li>
+            <li><a href="#">SLUŽBY</a></li>
+            <li><a href="#">REFERENCE</a></li>
+            <li><a href="#">O NÁS</a></li>
+            <li><a href="#">KONTAKT</a></li>
+        </ul>
     </nav>
+
+    <!--
+    <input type="checkbox" id="toggle">
+
+    <nav>
+        <img class="logo" src="./images/logo.png" alt="logo">
+
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link">DOMŮ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">SLUŽBY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">REFERENCE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">O NÁS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">KONTAKTY</a>
+            </li>
+        </ul>
+
+    </nav>
+    -->
+
 
     <header class="page_header">
         <p class="page_header__title">HM Building.cz s.r.o</p>
@@ -42,42 +70,38 @@
             <p>Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
         </div>
 
-        <div class="services__item services__item--image image1 image--odd">
-            <!--<img class="item__image image--odd" src="./images/sluzba-novostavby-1200w.jpg" alt="Život může být radost">-->
+        <div class="services__item services__item--image image1 image--odd grid__left">
         </div>
 
-        <div class="services__item" >
+        <div class="services__item grid__right" >
             <h2>Novostavby</h2>
             <p>Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
             <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
             <button class="button button--orange button--dashed">Zobrazit více</button>
         </div>
 
-        <div class="services__item services__item--image image2 image--even">
-            <!--<img class="item__image image--even" src="./images/sluzba-prumyslove-stavby-1920w.jpg" alt="Jeřáby">-->
+        <div class="services__item services__item--image image2 image--even grid__right">
         </div>
 
-        <div class="services__item" >
+        <div class="services__item grid__left" >
             <h2>Průmyslové stavby</h2>
             <p>Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <b>dostáváme na přijatelné ceny</b>.</p>
             <button class="button button--orange button--dashed">Zobrazit více</button>
         </div>
 
-        <div class="services__item services__item--image image3 image--odd">
-            <!--<img class="item__image image--odd" src="./images/sluzba-rekonstrukce-1920w.jpg" alt="Stavba domu">-->
+        <div class="services__item services__item--image image3 image--odd grid__left">
         </div>
 
-        <div class="services__item" >
+        <div class="services__item grid__right" >
             <h2>Rekonstrukce domů a jiných staveb</h2>
             <p>Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
             <button class="button button--orange button--dashed">Zobrazit více</button>
         </div>
 
-        <div class="services__item services__item--image image4 image--even">
-            <!--<img class="item__image image--even" src="./images/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Megazbiječka">-->
+        <div class="services__item services__item--image image4 image--even grid__right">
         </div>
 
-        <div class="services__item" >
+        <div class="services__item grid__left" >
             <h2>Komunikace a zpevněné plochy</h2>
             <p>Komunikace a zpevněné plochy provádíme včetně <b>zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.</p>
             <button class="button button--orange button--dashed">Zobrazit více</button>
@@ -85,10 +109,12 @@
     </div>
 
     <div class="confidence">
-        <p>Naše firma nabízí své služby 
-            ve stavebnictví od roku 2015.</p>
-        <p>Za kvalitu naší práce ručíme.</p>
-        <button class="button button--orange">Přesvědčit se</button>
+        <div class="confidence__content">
+            <p>Naše firma nabízí své služby 
+                ve stavebnictví od roku 2015.</p>
+            <p>Za kvalitu naší práce ručíme.</p>
+            <button class="button button--orange">Přesvědčit se</button>
+        </div>
     </div>
 
     <div class="reference">
