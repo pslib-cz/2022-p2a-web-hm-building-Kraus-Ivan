@@ -144,22 +144,22 @@ menu {
 
 .image1 {
     background-image:
-    url(../images/sluzba-novostavby-1200w.jpg);
+    url(../images/sluzbanovostavby/sluzbanovostavby720.jpg);
 }
 
 .image2 {
     background-image:
-    url(../images/sluzba-prumyslove-stavby-1920w.jpg);
+    url(../images/sluzbaprumyslove/sluzbaprumyslove720.jpg);
 }
 
 .image3 {
     background-image:
-    url(../images/sluzba-rekonstrukce-1920w.jpg);
+    url(../images/sluzbarekonstrukce/sluzbarekonstrukce720.jpg);
 }
 
 .image4 {
     background-image:
-    url(../images/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg);
+    url(../images/sluzbakomunikace/sluzbakomunikace720.jpg);
 }
 
 
@@ -214,7 +214,7 @@ menu {
 .confidence {
     background-image:
     linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
-    url(../images/background-CTAblock-4460w.jpg);
+    url(../images/background-CTA/cta720.jpg);
     background-repeat: no-repeat;
     font-weight: 700;
     background-position: center;
