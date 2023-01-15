@@ -10,6 +10,10 @@
         font-weight: 700;
     }
 
+    .gallery h2 {
+        font-size: 3.5em;
+    }
+
     .reference__item {
         position: relative;
         transition: background-position 1s;
@@ -177,6 +181,11 @@
         margin-bottom: 10em;
         text-align: center;
     }    
+
+    .page_header.page_header--notmobile {
+        display: block;
+    }
+    
 }
 
 
