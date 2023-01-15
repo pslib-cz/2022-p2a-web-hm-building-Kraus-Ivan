@@ -1,23 +1,22 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     color: #3A3A3A;
 }
 
-p {
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-figure {
-    margin: 0;
+a {
+    text-decoration: none;
+    color: #3A3A3A;
 }
-
-h1, h2, h3 {
-    margin: 0;
-}
-
 
 img {
     width: 100%;
@@ -33,91 +32,6 @@ img {
 
 
 
-/*
-nav *{
-    color: white;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    line-height: 75px;
-    background: white;
-}
-
-nav .logo {
-    padding: 2em;
-}
-
-.nav-list {
-    display: flex;
-}
-
-.nav-list .nav-item {
-    cursor: pointer;
-    height: 100%;
-    background-color: #EB6C27;
-}
-
-.nav-link {
-    color: #f1f1f1;
-    font-weight: 500;
-}
-
-.navbar-toggler {
-    display: none;
-    height: min-content;
-    margin-top: 2em;
-    margin-right: 0.5em;
-    cursor: pointer;
-}
-
-.navbar-toggler .bar {
-    width: 46px;
-    height: 8px;
-    margin-bottom: 7px;
-    background: #ffffff;
-    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
-    border-radius: 2px;
-}
-
-
-input {
-    display: none;
-}
-
-input:checked ~ nav .nav-list {
-    transform: translateY(0);
-    z-index: 999;
-}
-*/
-
-nav {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease 0s;
-}
-
 
 .page_header {
     background-image:
@@ -126,7 +40,7 @@ nav a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 18em;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,8 +60,34 @@ nav a {
     font-size: 1.25rem;
 }
 
+.page_header .button {
+    display: none;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 20px 50px;
+    font-size: 1.2em;
+}
+
+.page_header.page_header--small {
+    max-height: 50px;
+}
+
+.arrow {
+    margin-left: 15px;
+    margin-bottom: 3px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
 
 .button {
+    width: 245px;
     display: block;
     color: white;
     border: none;
@@ -220,11 +160,11 @@ nav a {
 
 
 .services {
-    max-width: 1150px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
-.services__item button {
+.services__item .button {
     margin-top: 1em;
 }
 
@@ -267,10 +207,12 @@ nav a {
     min-height: 4.5em;
     padding: 1.5em;
     color: white;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .confidence__content {
-    max-width: 1150px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -279,7 +221,7 @@ nav a {
     margin-top: 1em;
 }
 
-.confidence button {
+.confidence .button {
     margin-top: 1em;
 }
 
@@ -301,6 +243,10 @@ nav a {
     text-align: start;
 }
 
+.reference__item a {
+    display: block;
+}
+
 .reference h3 {
     margin-top: 0.5em;
     font-size: 1.5rem;
@@ -320,11 +266,67 @@ nav a {
     color: #EB6C27;
 }
 
-.reference button {
+.reference .button {
     margin: auto;
     margin-bottom: 6em;
 }
 
+.gallery {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 5em;
+}
+
+.gallery p {
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+
+.gallery h2 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    grid-auto-flow: dense;
+}
+
+
+.aboutus ul {
+    list-style: none;
+  }
+  
+.aboutus ul li::before {
+    content: "\2022"; 
+    color: #EB6C27; 
+    font-weight: 800;
+    font-size: 1.5em;
+    display: inline-block; 
+    width: 1em; 
+
+  }
+
+.aboutus {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 2em;
+    font-size: 1.15em;
+}
+
+.aboutus h2{
+    font-size: 2em;
+}
+
+.aboutus p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
 
 footer {
     padding: 2em;
