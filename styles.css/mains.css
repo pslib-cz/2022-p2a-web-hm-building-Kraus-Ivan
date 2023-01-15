@@ -197,6 +197,7 @@ transform: rotate(45deg);
 }
 
 .arrow_up {
+    display: none;
     position: absolute;
     top: -1.5em;
     right: -5px;
