@@ -31,20 +31,19 @@ img {
 
 
 header.header {
-    padding: 1.5em;
+    padding: 1em 0;
     position: relative;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.3s;
 }
 
-.logo a {
+.header_logo a {
     display: block;
 }
 
-.logo a img {
+.header_logo a img {
     display: block;
     width: 100%;
 }
@@ -70,7 +69,7 @@ header.header {
 
 .menu li a {
     text-decoration: none;
-    padding: 40px 20px;
+    padding: 2.4em 2.5em;
     transition: 0.3s;
 }
 
@@ -80,37 +79,40 @@ header.header {
 }
 
 .hamburger {
+    margin-right: 1.5em;
     position: relative;
-    width: 30px;
-    height: 4px;
-    background: #EB6C27;
+    width: 46px;
+    height: 8px;
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     cursor: pointer;
     z-index: 2;
     transition: 0.3s;
+    
 }
 
 .hamburger:before, .hamburger:after{
     content: "";
     position: absolute;
-    height: 4px;
+    width: 46px;
+    height: 8px;
+    background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     right: 0;
-    background: #EB6C27;
     transition: 0.3s;
 }
 
 .hamburger:after{
-    top: 10px;
-    width: 30px;
+    top: 13px;
+    width: 36;
 }
 
 .hamburger:before{
-    top: -10px;
-    width: 30px;
+    top: -13px;
+    width: 36;
 }
 
 .toggle-menu {
     position: absolute;
-    width: 30px;
+    width: 46px;
     height: 100%;
     z-index: 3;
     cursor: pointer;
@@ -138,10 +140,13 @@ header.header {
 }
 
 .navigation input:checked ~ .menu {
-    right: 0;
+    display: block;
     box-shadow: -20px 0 40px rgba(0,0,0,0.3);
 }
 
+.hamburger_description {
+    display: none;
+}
 
 .page_header {
     background-image:
@@ -197,7 +202,7 @@ transform: rotate(45deg);
 }
 
 .arrow_up {
-    display: none;
+    display: block;
     position: absolute;
     top: -1.5em;
     right: -5px;

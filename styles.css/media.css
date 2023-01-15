@@ -1,13 +1,14 @@
 @media (min-width: 750px) {
-    /*
-    nav{
-        position: absolute;
-        background-color: white;
-        top: 2%;
-        left: 10%;
-        right: 10%;
-    }*/
+    
+    header.header{ 
+        width: 100%;
+    }
 
+    .active {
+        background-color: #EB6C27;
+        color: white;
+        font-weight: 700;
+    }
 
     .reference__item {
         position: relative;
@@ -193,6 +194,34 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-    
+}
 
+@media (min-width: 1600px) { 
+    header.header{ 
+        position: absolute;
+        background-color: white;
+        width: unset;
+        top: 3%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .confidence {
+        min-height: 25vh;
+    }
+    .confidence__content {
+        margin-top: 3em;
+    }
+
+    .page_header__title {
+        font-size: 7em;
+    }
+
+    .page_header__title--description{
+        font-size: 3em;
+    }
+
+    .page_header.page_header.page_header--big {
+        min-height: 100vh;
+    }
 }
