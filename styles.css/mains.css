@@ -49,6 +49,8 @@ header.header {
 }
 
 .navigation {
+    font-weight: 400;
+    color: #888888;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,7 +180,6 @@ header.header {
 .page_header .button {
     display: none;
     margin-top: 2em;
-    margin-bottom: 5em;
     padding: 20px 50px;
     font-size: 1.2em;
 }
@@ -442,7 +443,6 @@ transform: rotate(45deg);
   }
 
 .aboutus {
-    
     margin-left: 1.5em;
     margin-right: 1.5em;
     margin-top: 7em;
