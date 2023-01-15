@@ -182,10 +182,49 @@
         text-align: center;
     }    
 
+    .aboutus h2 {
+        font-size: 3em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .aboutus ul {
+        margin-left: 5em;
+    }
+
     .page_header.page_header--notmobile {
         display: block;
     }
+    .page_header {
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
+        url(../images/pageheader/pageheader1200.jpg);
+    }
+
+    .image1 {
+        background-image:
+        url(../images/sluzbanovostavby/sluzba-novostavby-1200w.jpg);
+    }
     
+    .image2 {
+        background-image:
+        url(../images/sluzbaprumyslove/sluzbaprumyslove1200.jpg);
+    }
+    
+    .image3 {
+        background-image:
+        url(../images/sluzbarekonstrukce/sluzbarekonstrukce1200.jpg);
+    }
+    
+    .image4 {
+        background-image:
+        url(../images/sluzbakomunikace/sluzbakomunikace1200.jpg);
+    }
+    .confidence {
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+        url(../images/background-CTA/cta1200.jpg);
+    }
 }
 
 
@@ -202,6 +241,11 @@
     .gallery__grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+    }
+    .confidence {
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
+        url(../images/background-CTA/cta1920.jpg);
     }
 }
 
@@ -233,4 +277,30 @@
     .page_header.page_header.page_header--big {
         min-height: 100vh;
     }
+    .page_header {
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
+        url(../images/pageheader/pageheader-1920w.jpg);
+    }
+
+    .image2 {
+        background-image:
+        url(../images/sluzbaprumyslove/sluzba-prumyslove-stavby-1920w.jpg);
+    }
+    
+    .image3 {
+        background-image:
+        url(../images/sluzbarekonstrukce/sluzba-rekonstrukce-1920w.jpg);
+    }
+    
+}
+
+@media (min-width: 1600px) { 
+    .page_header {
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
+        url(../images/pageheader/pageheader-3100w.jpg);
+    }
+
+
 }

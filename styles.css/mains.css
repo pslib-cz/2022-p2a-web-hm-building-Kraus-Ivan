@@ -442,10 +442,17 @@ transform: rotate(45deg);
   }
 
 .aboutus {
+    
     margin-left: 1.5em;
     margin-right: 1.5em;
-    margin-top: 2em;
+    margin-top: 7em;
+    margin-bottom: 10em;
     font-size: 1.15em;
+}
+
+.aboutus__content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .aboutus h2{
