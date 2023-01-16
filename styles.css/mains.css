@@ -559,6 +559,10 @@ input[type=text], select, textarea {
     
 }
 
+.grid__contacts {
+    
+}
+
 footer {
     padding: 2em;
     text-align: center;
