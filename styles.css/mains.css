@@ -485,8 +485,8 @@ p.orange_text {
     position: absolute;
     content: '';
     border-radius: 50%;
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
     margin-right: 0.5rem;
     background-color: #EB6C27;    
 }
@@ -558,6 +558,32 @@ input[type=text], select, textarea {
 .map {
     
 }
+
+.icon_dot {
+    position: relative;
+}
+
+.icon_dot--phone::before {
+    content: url("../images/local_phone_24px.svg");
+    position: absolute;
+    left: -45px;
+    z-index: 999;
+}
+
+.icon_dot--mail::before {
+    content: url("../images/mail_24px.svg");
+    position: absolute;
+    left: -45px;
+    z-index: 999;
+}
+
+.icon_dot--position::before {
+    content: url("../images/room_24px.svg");
+    position: absolute;
+    left: -42px;
+    z-index: 999;
+}
+
 
 .grid__contacts {
     
