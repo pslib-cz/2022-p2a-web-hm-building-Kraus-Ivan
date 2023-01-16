@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     color: #3A3A3A;
 }
 
@@ -148,6 +150,7 @@ header.header {
 
 .hamburger_description {
     display: none;
+    right: 24px;
 }
 
 .page_header {
@@ -443,6 +446,7 @@ transform: rotate(45deg);
   }
 
 .aboutus {
+    font-weight: 400;
     margin-left: 1.5em;
     margin-right: 1.5em;
     margin-top: 7em;
@@ -463,6 +467,96 @@ transform: rotate(45deg);
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: 400;
+}
+
+p.orange_text {
+    position: relative;
+    margin-left: 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-weight: 700;
+    color: #EB6C27;
+}
+
+
+.icon_dot::before {
+    bottom: -7px;
+    left: -55px;
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    height: 2.25rem;
+    width: 2.25rem;
+    margin-right: 0.5rem;
+    background-color: #EB6C27;    
+}
+
+.map {
+    margin: 0;
+}
+
+.aboutus h3 {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 2em;
+}
+
+.form .button {
+    margin-top: 1.5em;
+}
+
+label {
+    font-weight: 700;
+}
+
+input[type=text], select, textarea {
+    font-weight: 700;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #EB6C27;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #EB6C27;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    min-width: 19em;
+    padding: 1.5em;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c9571a;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.grid__contacts {
+    grid-area: contacts;
+}
+
+.grid__map {
+    grid-area: map;
+}
+
+.grid__form {
+    grid-area: form;
+}
+
+.map {
+    
 }
 
 footer {

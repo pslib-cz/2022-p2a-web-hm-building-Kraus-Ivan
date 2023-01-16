@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+    <link rel="stylesheet" href="styles.css/mains.css">
+    <link rel="stylesheet" href="styles.css/mediaphotos.css">
+    <link rel="stylesheet" href="styles.css/medianavbar.css">
+    <link rel="stylesheet" href="styles.css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Building</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <p class="hamburger_description">MENU</p>
+            <div class="hamburger"></div>
+            <ul class="menu">
+                <div class="arrow_up"></div>
+                <li><a class="active" href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#services">SLUŽBY</a></li>
+                <li><a href="./reference.html">REFERENCE</a></li>
+                <li><a href="./onas.html">O NÁS</a></li>
+                <li><a href="">KONTAKT</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <header class="page_header page_header--notmobile"></header>
+
+    <div class="aboutus">
+        <div class="aboutus__content">
+            <h2>Kontaktujte nás</h2>
+            <p class="text_centered">
+                Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.
+            </p>
+            <div class="grid">
+                <div class="grid__cotacts">
+                    <p class="orange_text"><span class="icon_dot icon_dot--phone "></span>+420 775 564</p>
+                    <p class="orange_text"><span class="icon_dot icon_dot--mail "></span>stavby@hm-building.cz</p>
+                    <p class=" orange_text"><span class="icon_dot icon_dot--position"></span>Křižanská 12, Liberec XXII-Horní Suchá</p>
+                </div>
+    
+                <img class="grid__map map" src="./images/mapa.jpg" alt="Mapa">
+    
+                <div class="grid__form">
+                    <h3>Nezávazná poptávka služeb</h3>
+                    <p>
+                        Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.
+                    </p>
+        
+                    <div class="form">
+                        <form action="">
+        
+                            <label for="fullname">Jméno a příjmení</label>
+                            <input type="text" id="fullname" name="fullname">
+                        
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                                    
+                            <label for="phone">Telefon</label>
+                            <input type="text" id="phone" name="phone">
+                    
+                        
+                            <label for="subject">Poznámka</label>
+                            <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
+                        
+                            <input class="button button--orange button--hover" type="submit" value="Odesla nezávaznou poptávku">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <footer class="footer">
+        <h2>Plácneme si pro váš projekt?</h2>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné</p>
+        <a class="button button--white button--footer button--hover">Nezávazně poptat</a>
+    </footer>
+</body>
+</html>
