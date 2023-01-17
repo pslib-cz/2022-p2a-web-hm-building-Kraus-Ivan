@@ -33,7 +33,7 @@ img {
 
 
 header.header {
-    padding: 1em 0;
+    padding: 1.5em 0;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -58,6 +58,11 @@ header.header {
     align-items: center;
 }
 
+.logo img {
+    height: 3em;
+
+}
+
 .menu {
     display: flex;
     justify-content: center;
@@ -73,7 +78,7 @@ header.header {
 
 .menu li a {
     text-decoration: none;
-    padding: 2.4em 2.5em;
+    padding: 38px 2.5em;
     transition: 0.3s;
 }
 
