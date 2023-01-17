@@ -445,6 +445,13 @@ transform: rotate(45deg);
     color: #EB6C27;
 }
 
+.aboutus.margin_off {
+    margin-right: 0;
+}
+
+.text_centered {
+    margin-right: 1.5em;
+}
 
 .aboutus {
     font-weight: 400;
@@ -597,9 +604,6 @@ input[type=text], select, textarea {
 }
 
 
-.aboutus {
-    margin-right: 0;
-}
 
 footer {
     padding: 2em;
