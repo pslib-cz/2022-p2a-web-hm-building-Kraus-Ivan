@@ -557,10 +557,16 @@ input[type=text], select, textarea {
     grid-area: form;
 }
 
-.map {
-    
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.5em;
+    grid-template-areas:
+    "contacts ."
+    "map map"
+    "form .";
+    width: 100%;
 }
-
 .icon_dot {
     position: relative;
 }
@@ -587,8 +593,8 @@ input[type=text], select, textarea {
 }
 
 
-.grid__contacts {
-    
+.aboutus {
+    margin-right: 0;
 }
 
 footer {

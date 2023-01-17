@@ -72,6 +72,7 @@
         margin-right: auto;
     
     }
+
     .services__item--header {
         text-align: center;
         grid-column-start: 1;
@@ -104,7 +105,6 @@
     .page_header.page_header.page_header--big {
         min-height: 77vh;
     }
-
     .reference {
         margin-top: 5em;
         margin-bottom: 5em;
@@ -199,15 +199,6 @@
         display: block;
     }
 
-    
-    .menu li a {
-   
-    }
-
-    .map {
-        margin-right: -5em;
-    }
-
     p.text_centered {
         text-align: center;
         margin-bottom: 7em;
@@ -274,11 +265,22 @@
         display: grid;
         gap: 125px;
         align-items: center;
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.5fr 1fr 1em;
         grid-template-areas:
-        "contacts map"
-        "form .";
+        "contacts map map"
+        "form . .";
+        width: 100%;
+        margin-left: 10em;
     }
+
+
+
+    .aboutus__content.aboutus__content--width100 {
+        max-width: unset;
+        margin: 0;
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 1600px) { 
