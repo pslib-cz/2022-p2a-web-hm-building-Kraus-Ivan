@@ -73,6 +73,11 @@
     
     }
 
+    .aboutus ul {
+        margin-left: 5em;
+    }
+    
+
     .services__item--header {
         text-align: center;
         grid-column-start: 1;
@@ -234,6 +239,9 @@
 
 
 @media (min-width: 1150px) { 
+    .aboutus ul {
+        margin-left: 7em;
+    }
     .services__item--image {
         min-height: 20em;
     }
@@ -261,7 +269,7 @@
         display: grid;
         gap: 125px;
         align-items: center;
-        grid-template-columns: 0.5fr 1fr 1em;
+        grid-template-columns: 0.5fr 1fr 1fr;
         grid-template-areas:
         "contacts map map"
         "form . .";
