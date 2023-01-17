@@ -436,19 +436,15 @@ transform: rotate(45deg);
     display: none;
 }
 
-.aboutus ul {
-    list-style: none;
-  }
-  
-.aboutus ul li::before {
-    content: "\2022"; 
-    color: #EB6C27; 
-    font-weight: 800;
-    font-size: 1.5em;
-    display: inline-block; 
-    width: 1em; 
+.aboutus__content li {
+    line-height: 1.15;
+}
 
-  }
+.aboutus li::marker{
+    font-size: 2em;
+    color: #EB6C27;
+}
+
 
 .aboutus {
     font-weight: 400;
