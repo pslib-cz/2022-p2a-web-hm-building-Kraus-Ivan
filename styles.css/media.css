@@ -201,7 +201,7 @@
 
     
     .menu li a {
-        padding: 2.4em 2.5em;
+   
     }
 
     .map {
@@ -273,6 +273,7 @@
     .grid {
         display: grid;
         gap: 125px;
+        align-items: center;
         grid-template-columns: 0.5fr 1fr;
         grid-template-areas:
         "contacts map"

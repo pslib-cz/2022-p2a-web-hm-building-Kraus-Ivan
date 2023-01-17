@@ -209,11 +209,11 @@ transform: rotate(45deg);
     display: block;
     position: absolute;
     top: -1.5em;
-    right: -5px;
+    right: 0px;
     width: 0; 
     height: 0; 
-    border-left: 45px solid transparent;
-    border-right: 45px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     border-bottom: 50px solid #EB6C27;
   }
 
@@ -493,6 +493,7 @@ p.orange_text {
 
 .map {
     margin: 0;
+    width: 100%;
 }
 
 .aboutus h3 {
