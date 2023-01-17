@@ -571,6 +571,10 @@ input[type=text], select, textarea {
     position: relative;
 }
 
+.aboutus ul {
+    margin-left: 5em;
+}
+
 .icon_dot--phone::before {
     content: url("../images/local_phone_24px.svg");
     position: absolute;
