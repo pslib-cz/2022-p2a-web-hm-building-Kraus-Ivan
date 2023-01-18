@@ -7,8 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     color: #3A3A3A;
-    overflow: hidden;
-
 }
 
 *{
@@ -562,26 +560,27 @@ input[type=text], select, textarea {
 
 .grid__contacts {
     grid-area: contacts;
+    margin-left: 1em;
 }
 
 .grid__map {
     grid-area: map;
-    
+
 }
 
 .grid__form {
     grid-area: form;
+    margin-left: 1.5em;
 }
 
 .grid {
     display: grid;
     align-items: center;
-    
-    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-areas:
-    ". contacts ."
-    "map map map"
-    ". form .";
+    "contacts ."
+    "map map"
+    "form .";
     width: 100%;
 }
 .icon_dot {

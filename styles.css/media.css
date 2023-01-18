@@ -259,14 +259,13 @@
 
     .grid {
         display: grid;
-        gap: 125px;
+        
         align-items: center;
-        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-columns: 10em 0.5fr 1fr;
         grid-template-areas:
-        "contacts map map"
-        "form . .";
+        ". contacts map"
+        ". form . ";
         width: 100%;
-        margin-left: 10em;
     }
 
 
