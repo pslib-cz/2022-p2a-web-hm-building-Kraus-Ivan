@@ -436,6 +436,10 @@ transform: rotate(45deg);
     display: none;
 }
 
+.aboutus__content h2 {
+    margin-left: 1rem;
+}
+
 .aboutus__content li {
     line-height: 1.15;
 }
@@ -447,10 +451,12 @@ transform: rotate(45deg);
 
 .aboutus.margin_off {
     margin-right: 0;
+    margin-left: 0;
 }
 
 .text_centered {
-    margin-right: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .aboutus {
@@ -558,6 +564,7 @@ input[type=text], select, textarea {
 
 .grid__map {
     grid-area: map;
+    
 }
 
 .grid__form {
@@ -567,11 +574,12 @@ input[type=text], select, textarea {
 .grid {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1.5em;
+    
+    grid-template-columns: 1.5em 1fr 1.5em;
     grid-template-areas:
-    "contacts ."
-    "map map"
-    "form .";
+    ". contacts ."
+    "map map map"
+    ". form .";
     width: 100%;
 }
 .icon_dot {
