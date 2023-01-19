@@ -107,6 +107,7 @@
 
     .services {
         display: grid;
+        align-items: center;
         grid-auto-flow: dense;
         grid-template-columns: 1fr 1fr;
     }
@@ -272,13 +273,17 @@
         url(../images/background-CTA/cta1920.jpg);
     }
 
+    .footer h2 {
+        font-size: 2.5em;
+    }
+
+
     .page_header.page_header.page_header--big {
         min-height: 83vh;
     }
 
     .grid {
         display: grid;
-        
         align-items: center;
         grid-template-columns: 10em 0.5fr 1fr;
         grid-template-areas:
@@ -307,6 +312,15 @@
         right: 10%;
     }
 
+    .footer h2 {
+        font-size: 3.5em;
+    }
+
+    .footer p {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
     .page_header .button {
         margin-bottom: 5em;
     }
@@ -323,7 +337,8 @@
     }
 
     .page_header__title--description{
-        font-size: 3em;
+        font-size: 3.5em;
+        margin-bottom: 0.5em;
     }
 
     .page_header {
