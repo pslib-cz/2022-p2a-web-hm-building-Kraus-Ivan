@@ -576,7 +576,7 @@ input[type=text], select, textarea {
 .grid {
     display: grid;
     align-items: center;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr 1.5em;
     grid-template-areas:
     "contacts ."
     "map map"
@@ -603,6 +603,15 @@ input[type=text], select, textarea {
     position: absolute;
     left: -45px;
     z-index: 999;
+}
+
+.grid__right {
+    grid-column-start: 2;
+
+}
+
+.grid__left {
+    grid-column-start: 1;
 }
 
 .icon_dot--position::before {
