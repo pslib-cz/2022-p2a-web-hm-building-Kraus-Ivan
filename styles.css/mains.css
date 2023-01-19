@@ -68,7 +68,7 @@ header.header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
 }
 
@@ -139,13 +139,16 @@ header.header {
 .navigation input:checked ~ .hamburger:before {
     top: 0;
     transform: rotate(-45deg);
-    width: 30px;
+    width: 40px;
+    right: 5px;
 }
 
 .navigation input:checked ~ .hamburger:after {
     top: 0;
     transform: rotate(45deg);
-    width: 30px;
+    width: 40px;
+    right: 5px;
+
 }
 
 .navigation input:checked ~ .menu {
@@ -165,12 +168,13 @@ header.header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 25vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     padding-bottom: 1em;
+    
 }
 
 .page_header__title {
@@ -214,7 +218,7 @@ transform: rotate(45deg);
     display: block;
     position: absolute;
     top: -1.5em;
-    right: 0px;
+    right: 10px;
     width: 0; 
     height: 0; 
     border-left: 30px solid transparent;
@@ -223,7 +227,7 @@ transform: rotate(45deg);
   }
 
 .button {
-    width: 245px;
+    width: 200px;
     display: block;
     color: white;
     border: none;
@@ -253,8 +257,10 @@ transform: rotate(45deg);
 }
 
 .button--footer {
-    margin: auto;
-    padding: 20px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 250px;
 }
 
 
@@ -345,6 +351,7 @@ transform: rotate(45deg);
     color: white;
     margin-top: 5em;
     margin-bottom: 5em;
+    
 }
 
 .confidence__content {
@@ -407,6 +414,11 @@ transform: rotate(45deg);
     margin-bottom: 6em;
 }
 
+.reference {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
 .gallery {
     margin-left: 1em;
     margin-right: 1em;
@@ -416,6 +428,11 @@ transform: rotate(45deg);
 .gallery p {
     font-size: 1.2em;
     margin-bottom: 3em;
+}
+
+.reference__item h2{
+    margin-right: 3.5em;
+    font-size: 2em;
 }
 
 .gallery h2 {
@@ -440,6 +457,9 @@ transform: rotate(45deg);
     margin-left: 1rem;
 }
 
+h2.margin_off {
+    margin-left: 0
+}
 .aboutus__content li {
     line-height: 1.15;
 }
@@ -463,8 +483,8 @@ transform: rotate(45deg);
     font-weight: 400;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    margin-top: 7em;
-    margin-bottom: 10em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     font-size: 1.15em;
 }
 
@@ -512,7 +532,7 @@ p.orange_text {
 
 .aboutus h3 {
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 700;
 }
 
@@ -595,14 +615,14 @@ input[type=text], select, textarea {
     content: url("../images/local_phone_24px.svg");
     position: absolute;
     left: -45px;
-    z-index: 999;
+    z-index: 1;
 }
 
 .icon_dot--mail::before {
     content: url("../images/mail_24px.svg");
     position: absolute;
     left: -45px;
-    z-index: 999;
+    z-index: 1;
 }
 
 .grid__right {
@@ -622,13 +642,17 @@ input[type=text], select, textarea {
 }
 
 footer {
-    padding: 2em;
+    padding: 1.5em;
     text-align: center;
     background-color: #EB6C27;
     color: white;
     margin-bottom: 0.5em;
 }
 
+.footer h2 {
+    font-size: 1.25em;
+}
+
 .footer * {
-    margin-top: 1.5em;
+    margin-top: 2em;
 }

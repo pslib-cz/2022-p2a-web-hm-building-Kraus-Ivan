@@ -4,8 +4,8 @@
     }
 
     .header {
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         padding: 10px 20px;
     }
     .menu {
@@ -54,7 +54,7 @@
     .hamburger_description {
         display: block;
         position: absolute;
-        top: 5px;
+        top: 13px;
     }
 }
 
