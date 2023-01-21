@@ -125,14 +125,11 @@ nav.navigation {
     opacity: 0;
 }
 
-.navigation__hamburger {
-    position: relative;
-}
 
 .hamburger__hamburger-description {
     display: none;
     position: absolute;
-    top: -33px;
+    top: 27px;
     right: 1.5em;
 }
 
