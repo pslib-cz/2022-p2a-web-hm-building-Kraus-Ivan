@@ -1,42 +1,209 @@
-@media (min-width: 750px) {
-    
-    header.header{ 
-        width: 100%;
+@media screen and (max-width: 410px) {
+    .page-header {
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content__desktop {
+        display: none;
+    }
+    .content__mobile {
+        display: block;
     }
 
-    .active {
+    .navigation__menu {
+        display: none;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 112px;
+        left: 0.75em;
+        right: 0.75em;
         background-color: #EB6C27;
+        height: 310px;
+        font-size: 1em;
+        padding-top: 20px;
+    }
+
+    .navigation__hamburger {
+        display: block;
+    }
+
+    .navigation__menu .menu__item{
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+    .navigation__menu .menu__item:first-child{
+        margin-top: 0;
+    }
+    
+    .navigation__menu .menu__item a {
+        padding: 10px 30px;
         color: white;
+        font-size: 1.5em;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+
+    .navigation__menu .menu__item a.active {
         font-weight: 700;
     }
 
-    .gallery h2 {
-        font-size: 3.5em;
+    .hamburger__hamburger-description {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 901px) {
+    .menu__arrow {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .gallery__content .content__grid {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 10em;
+        text-align: center;
     }
 
-    .reference__item {
+
+    .grid__map {
         position: relative;
         transition: background-position 1s;
     }
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: all 1s;
-        background-color: rgba(235, 108, 39, 0.85);
-      }
 
-    .reference__item:hover .overlay {
-        opacity: 1;
-      }
+    .content__description--centered {
+        text-align: center;
+        margin-bottom: 7em;
+    }
 
+    .content__list {
+        margin-left: 5em;
+    }
+    
+    
+    .content__title {
+        font-size: 3em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
 
-      .map__overlay {
+    .services__item--header {
+        margin: 5em 0em;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 1.5em;
+    }
+
+    .item__link {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services__item::before{
+        min-height: 25vh;
+    }
+
+    .confidence__content {
+        min-height: 10em;
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+
+    .button--hover-main:hover {
+        background-color: var(--main);
+    }
+
+    .button--hover-main:hover a {
+        color: var(--white);
+    }
+
+    .button--hover-darkmain:hover {
+        background-color: var(--darkmain);
+    }
+
+    .button--hover-darkmain:hover a {
+        color: var(--white);
+    }
+
+    .page-header__title {
+        font-size: 3em;
+    }
+
+    .page-header__button {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .page-header {
+        min-height: 97vh;
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.50), rgba(36, 36, 36, 0.70)),
+        url(../images/pageheader/pageheader-1920w.jpg);
+    }
+
+    .references {
+        margin-bottom: 8em;
+    }
+
+    .footer {
+        margin-bottom: 0.5em;
+    }
+
+    .footer__title {
+        margin-top: 1em;
+    }
+
+}
+
+@media (min-width: 1150px) { 
+
+    .services__item {
+        gap: 5em;
+        flex-direction: row;
+    }
+
+    .services__item:nth-child(odd)::before{
+        order: 2;
+    }
+
+    .services__item::before {
+        flex: 1;
+        min-height: 30vh;
+        background-position: center;
+    }
+    .item__flex {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    
+
+    .gallery__content .content__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .map__overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -49,15 +216,40 @@
         background-color: rgba(235, 108, 39, 0.75);
       }
 
-
-    .grid__map {
-        position: relative;
-        transition: background-position 1s;
+    .contact .content__grid {
+        margin-top: 8em;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 10em 0.5fr 1fr;
+        grid-template-areas:
+        ". contacts map"
+        ". form . ";
+        width: 100%;
+        gap: 4em;
     }
-      
-    .overlay__text--h3 {
+
+
+    .content__list {
+        margin-left: 6em;
+    }
+
+    .link__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all 1s;
+        background-color: rgba(235, 108, 39, 0.85);
+      }
+
+    .overlay__title {
         color: white;
-        font-size: 2.5em;
+        text-transform: uppercase;
+        font-size: 1.5em;
         font-weight: 700;
         position: absolute;
         margin-left: auto;
@@ -68,63 +260,38 @@
         text-align: center;
     }
 
-    .overlay__text--p {
+    .overlay__description {
         color: white;
         font-size: 1em;
         font-weight: 300;
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 50%;
+        top: 55%;
         left: 0;
         right: 0;
         text-align: center;
     }
 
-    .confidence {
-        min-height: 10vh;
+    .page-header__title {
+        font-size: 4em;
     }
 
-    .services__item--header {
-        margin: 5em 1.5em;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    
+    .page-header {
+        min-height: 97vh;
+        background-image:
+        linear-gradient(to bottom, rgba(36, 36, 36, 0.50), rgba(36, 36, 36, 0.70)),
+        url(../images/pageheader/pageheader-3100w.jpg);
     }
 
-    .aboutus ul {
-        margin-left: 5em;
-    }
-    
-
-    .services__item--header {
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        font-size: 2em;
+    .references__item {
+        position: relative;
+        transition: background-position 1s;
     }
 
-    .services {
-        display: grid;
-        align-items: center;
-        grid-auto-flow: dense;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .services__item--image {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 15em;
-    }
-    
-    .page_header.page_header.page_header--big {
-        min-height: 77vh;
-    }
-    .reference {
+    .references {
         margin-top: 5em;
-        margin-bottom: 5em;
+        margin-bottom: 12em;
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
@@ -132,20 +299,21 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .confidence__content {
-        min-height: 10em;
-        padding-left: 2em;
-        padding-top: 2em;
+
+    .references__item--header {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
-     .reference .reference__item--header p {
+    .references .references__item--header .item__description {
         max-width: 750px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
 
-    .reference .reference__item--header h2 {
+    .references .references__item--header .item__title {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
@@ -153,225 +321,40 @@
         text-align: center;
     }
 
-    .reference__item--header {
-        text-align: center;
-        grid-column-start: 1;
-        grid-column-end: 4;
+    .references__item {
+        position: relative;
+        transition: background-position 1s;
     }
 
-    .reference .button {
+    .references__item:hover .link__overlay {
+        opacity: 1;
+    }
+
+    .references .button {
         grid-column-start: 2;
         grid-column-end: 3;
     }
 
-    .page_header.page_header--big {
-        min-height: 45vh;
-    }
-    
-    .page_header__title {
-        font-size: 4em;
-    }
-    .page_header__title--description {
-        font-size: 2em;
-    }
-
-    footer h2 {
-        font-size: 3em;
-    }
-
-    .page_header .button {
-        display: block;
-    }
-
-    .gallery__grid {
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gallery {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
-    .gallery__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .gallery {
-        margin-bottom: 10em;
-        text-align: center;
-    }    
-
-    .aboutus h2 {
-        font-size: 3em;
-        margin-bottom: 1.5em;
-        text-align: center;
-    }
-
-    .page_header.page_header--notmobile {
-        display: block;
-    }
-
-    p.text_centered {
-        text-align: center;
-        margin-bottom: 7em;
-    }
-
-    .page_header {
-        background-image:
-        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
-        url(../images/pageheader/pageheader1200.jpg);
-    }
-
-    .image1 {
-        background-image:
-        url(../images/sluzbanovostavby/sluzba-novostavby-1200w.jpg);
-    }
-    
-    .image2 {
-        background-image:
-        url(../images/sluzbaprumyslove/sluzbaprumyslove1200.jpg);
-    }
-    
-    .image3 {
-        background-image:
-        url(../images/sluzbarekonstrukce/sluzbarekonstrukce1200.jpg);
-    }
-    
-    .image4 {
-        background-image:
-        url(../images/sluzbakomunikace/sluzbakomunikace1200.jpg);
-    }
-    .confidence {
-        background-image:
-        linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
-        url(../images/background-CTA/cta1200.jpg);
-    }
 }
 
-
-@media (min-width: 1150px) { 
-    .aboutus ul {
-        margin-left: 7em;
+@media (min-width: 1440px) { 
+    .newbuildings .content__description {
+        margin-right: 25vw;
     }
-    .services__item--image {
-        min-height: 20em;
-    }
-
-    .button--hover:hover {
-        background-color: #ce591a;
-        color: white;
-    }
-
-    .gallery__grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-    .confidence {
-        background-image:
-        linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
-        url(../images/background-CTA/cta1920.jpg);
-    }
-
-    .footer h2 {
-        font-size: 2.5em;
-    }
-
-
-    .page_header.page_header.page_header--big {
-        min-height: 83vh;
-    }
-
-    .grid {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 10em 0.5fr 1fr;
-        grid-template-areas:
-        ". contacts map"
-        ". form . ";
-        width: 100%;
-    }
-
-
-
-    .aboutus__content.aboutus__content--width100 {
-        max-width: unset;
-        margin: 0;
-        width: 100%;
-    }
-
-}
-
-@media (min-width: 1600px) { 
-    header.header{ 
-        position: absolute;
-        background-color: white;
-        width: unset;
-        top: 3%;
-        left: 10%;
-        right: 10%;
-    }
-
-    .footer h2 {
-        font-size: 3.5em;
-    }
-
-    .footer p {
-        font-size: 1.5em;
-        font-weight: 300;
-    }
-
-    .page_header .button {
-        margin-bottom: 5em;
-    }
-
-    .confidence {
-        min-height: 25vh;
-    }
-    .confidence__content {
-        margin-top: 3em;
-    }
-
-    .page_header__title {
-        font-size: 7em;
-    }
-
-    .page_header__title--description{
-        font-size: 3.5em;
+    .footer__title {
+        font-size: 3em;
         margin-bottom: 0.5em;
+        margin-top: 1em;
     }
 
-    .page_header {
-        background-image:
-        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
-        url(../images/pageheader/pageheader-1920w.jpg);
-    }
-
-    .image2 {
-        background-image:
-        url(../images/sluzbaprumyslove/sluzba-prumyslove-stavby-1920w.jpg);
-    }
-    
-    .image3 {
-        background-image:
-        url(../images/sluzbarekonstrukce/sluzba-rekonstrukce-1920w.jpg);
-    }
-    .page_header.page_header.page_header--big {
-        min-height: 95vh;
-    }
-}
-
-@media (min-width: 1600px) { 
-    .page_header {
-        background-image:
-        linear-gradient(to bottom, rgba(36, 36, 36, 0.52), rgba(36, 36, 36, 0.73)),
-        url(../images/pageheader/pageheader-3100w.jpg);
+    .footer__button {
+        margin-bottom: 1em;
     }
 
     .services__item--header {
         letter-spacing: 1px;
     }
-    .services__item h2{
+    .services__item .item__title{
         font-size: 2em;
     }
 
@@ -379,14 +362,18 @@
         min-height: 40vh;
         font-size: 2em;
         line-height: 15px;
-    }    
-    .confidence .button {
-        padding: 1.5em;
-        margin-top: 3em;
+    } 
+
+    .page-header__title {
+        font-size: 6em;
     }
 
-    .reference__item.reference__item--header h2{
-        font-size: 3.5em;
-        margin-bottom: 1em;
+    .navigation {
+        max-width: 1600px;
+        margin-left: calc((100vw - 1600px)/2);
+        margin-top: 1.5%;
+    }
+    .confidence__content {
+        margin-left: 2em;
     }
 }

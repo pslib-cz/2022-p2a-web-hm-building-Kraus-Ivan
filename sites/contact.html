@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css/normalize.css">
+    <link rel="stylesheet" href="../styles.css/main.css">
+    <link rel="stylesheet" href="../styles.css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Building.cz s.r.o</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Logo firmy">
+                </a>
+            </div>
+    
+            <menu class="navigation__menu">
+                <span class="menu__arrow"></span>
+                <li class="menu__item"><a href="../index.html">DOMŮ</a></li>
+                <li class="menu__item"><a href="../index.html#services">SLUŽBY</a></li>
+                <li class="menu__item"><a href="./references.html">REFERENCE</a></li>
+                <li class="menu__item"><a href="./aboutus.html">O NÁS</a></li>
+                <li class="menu__item"><a class="active" href="./contact.html">KONTAKT</a></li>
+            </menu>
+
+            <div class="navigation__hamburger">
+                <input type="checkbox" class="hamburger__toggle-menu">
+                <p class="hamburger__hamburger-description">MENU</p>
+                <span class="hamburger__hamburger-line"></span>
+            </div>
+        </nav>
+
+        <div class="page-header page-header--img-none">
+            <p class="page-header__title">HM Building.cz s.r.o 
+                <span class="page-header__title--break">liberecká stavební společnost</span></p>
+            <button class="page-header__button button">
+                <a href="../index.html#services">pokračovat<span class="button__arrow-down"></span></a>
+            </button>
+        </div>
+    </header>
+
+
+    <section class="contact">
+        <div class="contact__content">
+            <p class="content__title">Kontaktujte nás</p>
+            <p class="content__description content__description--centered">
+                Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.
+            </p>
+            <div class="content__grid">
+                <div class="grid__contacts">
+                    <p class="contacts__description"><span class="icon-dot--phone "></span><span class="icon-dot"></span>+420 775 564</p>
+                    <p class="contacts__description"><span class="icon-dot--mail "></span><span class="icon-dot"></span>stavby@hm-building.cz</p>
+                    <p class=" contacts__description"><span class="icon-dot--position"></span><span class="icon-dot"></span>Křižanská 12, Liberec XXII-Horní Suchá</p>
+                </div>
+    
+                <div class="grid__map">
+                    <img class="map__img" src="../images/mapa.jpg" alt="Mapa">
+                    <span class="map__overlay"></span>
+                </div>
+                
+    
+                <div class="grid__form">
+                    <p class="form__title">Nezávazná poptávka služeb</p>
+                    <p class="form__description">
+                        Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.
+                    </p>
+        
+                    <div class="form-labels">
+                        <form action="">
+        
+                            <label for="fullname">Jméno a příjmení</label>
+                            <input type="text" id="fullname" name="fullname">
+                        
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email">
+                                    
+                            <label for="phone">Telefon</label>
+                            <input type="text" id="phone" name="phone">
+                    
+                        
+                            <label for="subject">Poznámka</label>
+                            <textarea id="subject" name="subject" placeholder="" style="height:300px"></textarea>
+                        
+                            <input class="button" type="submit" value="Odeslat nezávaznou poptávku">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
