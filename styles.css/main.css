@@ -39,8 +39,8 @@ img {
 
 
 nav.navigation {
-    position: fixed;
-    padding: 2em 0;
+    position: absolute;
+    padding: 1.75em 0;
     z-index: 999;
     width: 100%;
     display: flex;
@@ -70,7 +70,7 @@ nav.navigation {
 }
 
 .navigation__menu .menu__item a {
-    padding: 2.85em 2.5em;
+    padding: 2.6em 2.5em;
     transition: 0.3s;
     font-weight: 500;
     color: var(--lightgrey);
@@ -129,7 +129,7 @@ nav.navigation {
 .hamburger__hamburger-description {
     display: none;
     position: absolute;
-    top: 27px;
+    top: 25px;
     right: 1.5em;
 }
 
@@ -234,7 +234,7 @@ nav.navigation {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 800;
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: var(--main);
@@ -359,7 +359,7 @@ button {
     linear-gradient(to bottom, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85)),
     url(../images/background-CTA/cta720.jpg);
     background-repeat: no-repeat;
-    font-weight: 700;
+    font-weight: 800;
     background-position: center;
     background-size: cover;
     padding: 1.5em;
@@ -395,7 +395,7 @@ button {
 .references__item--header .item__title {
     text-align: start;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 1em;
 }
 
@@ -422,7 +422,7 @@ button {
 
 .overlay__title {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 0.5em;
 }
 
@@ -456,7 +456,7 @@ footer {
 
 .footer__title {
     margin-top: 1.5em;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.40em;
     margin-bottom: 1em;
 }
@@ -499,7 +499,7 @@ footer {
 
 .content__title {
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .content__description{
@@ -563,7 +563,7 @@ footer {
 .form__title {
     margin-top: 2em;
     font-size: 1.25em;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 1em;
 }
 
@@ -572,7 +572,7 @@ footer {
     margin-left: 3em;
     margin-top: 3em;
     margin-bottom: 3em;
-    font-weight: 700;
+    font-weight: 800;
     color: #EB6C27;
 }
 .icon-dot {
@@ -617,11 +617,11 @@ footer {
 }
 
 label {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 input[type=text], select, textarea {
-    font-weight: 700;
+    font-weight: 800;
     width: 100%;
     padding: 12px; 
     border: 1px solid #EB6C27;
@@ -725,4 +725,8 @@ input[type=text], select, textarea {
 #reference {
     margin-top: 2em;
     margin-bottom: 1em;
+}
+
+.confidence p.content__description {
+    font-weight: 700;
 }
