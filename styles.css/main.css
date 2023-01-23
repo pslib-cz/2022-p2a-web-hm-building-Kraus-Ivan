@@ -509,8 +509,6 @@ footer {
     font-weight: 400;
 }
 
-
-
 .contact .content__title {
     margin-left: 0.5em;
 }
@@ -728,5 +726,5 @@ input[type=text], select, textarea {
 }
 
 .confidence p.content__description {
-    font-weight: 700;
+    font-weight: 800;
 }
