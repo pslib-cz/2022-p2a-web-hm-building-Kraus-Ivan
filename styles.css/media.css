@@ -378,13 +378,6 @@
         font-size: 6em;
     }
 
-    .navigation {
-        max-width: 1600px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 3%;
-    }
     .confidence__content {
         margin-left: 2em;
     }
@@ -401,4 +394,15 @@
     .contacts__description {
         scale: 1.25;
     }
+}
+
+@media (min-width: 1550px) {
+    .navigation {
+        max-width: 1550px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 3%;
+    }
+    
 }
