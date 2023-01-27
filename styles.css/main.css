@@ -715,6 +715,11 @@ input[type=text], select, textarea {
     grid-auto-flow: dense;
 }
 
+.grid__item--big {
+   
+    grid-row-end: span 3;
+}
+
 
 .aboutus, .communicationarea, .contact, .industrialbuidlings, .newbuildings, .outsideareas, .reconstructions, .references, .washing, .gallery {
     margin-top: 20vh;
