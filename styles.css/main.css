@@ -720,6 +720,10 @@ input[type=text], select, textarea {
     grid-row-end: span 3;
 }
 
+.grid__item--big-washing{
+    grid-row-start: 1;
+}
+
 
 .aboutus, .communicationarea, .contact, .industrialbuidlings, .newbuildings, .outsideareas, .reconstructions, .references, .washing, .gallery {
     margin-top: 20vh;
