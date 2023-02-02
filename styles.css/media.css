@@ -72,6 +72,31 @@
     .page-header.page-header--img-none .page-header__title, .page-header.page-header--img-none .page-header__button{
         display: none;
     }
+
+    
+.gallery__content .content__grid img{
+    object-fit: contain;
+    display: block;
+}
+
+.grid__item--big {
+    grid-row-end: span 3;
+}
+
+
+.grid__item--big-washing {
+    grid-row-end: span 1;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+
+.grid__item--big-washing img {
+    max-height: 290px;
+    object-position: left;
+}
+
+
 }
 
 
@@ -391,9 +416,6 @@
         font-size: 2em;
     }
 
-    .contacts__description {
-        scale: 1.25;
-    }
 }
 
 @media (min-width: 1550px) {
