@@ -39,7 +39,6 @@ img {
 
 
 nav.navigation {
-    position: absolute;
     padding: 1.75em 0;
     z-index: 999;
     width: 100%;
@@ -192,7 +191,8 @@ nav.navigation {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    min-height: 45vh;
+    min-height: 40vh;
+    background-position: top top;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,9 +238,6 @@ nav.navigation {
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: var(--main);
-}
-
-button {
     border: none;
     outline:none;
 }
@@ -320,7 +317,7 @@ button {
     background-image: unset;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+
 }
 
 .services__item:nth-child(odd)::before{
@@ -539,7 +536,6 @@ footer {
     "contacts ."
     "map map"
     "form .";
-    width: 100%;
 }
 .grid__contacts {
     grid-area: contacts;
@@ -549,7 +545,6 @@ footer {
 .grid__map {
     grid-area: map;
     margin: 0;
-    width: 100%;
 }
 
 .grid__form {
@@ -566,6 +561,7 @@ footer {
 }
 
 .contacts__description {
+    display: block;
     position: relative;
     margin-left: 3em;
     margin-top: 3em;
@@ -573,37 +569,36 @@ footer {
     font-weight: 800;
     color: #EB6C27;
 }
-.icon-dot {
-    position: relative;
-}
-.icon-dot::before {
-    bottom: -9px;
-    left: -55px;
+
+.contacts__description::before {
+    bottom: -10px;
+    left: -50px;
     position: absolute;
     content: '';
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
-    margin-right: 0.5rem;
     background-color: #EB6C27;    
 }
-.icon-dot--phone::before {
-    content: url("../images/local_phone_24px.svg");
+
+.icon-dot::before {
     position: absolute;
-    left: -45px;
+    left: -40px;
     z-index: 1;
+}
+
+.icon-dot--phone::before {
+    top: -3px;
+    content: url("../images/local_phone_24px.svg");
+
 }
 .icon-dot--mail::before {
     content: url("../images/mail_24px.svg");
-    position: absolute;
-    left: -45px;
-    z-index: 1;
 }
 .icon-dot--position::before {
     content: url("../images/room_24px.svg");
-    position: absolute;
-    left: -42px;
-    z-index: 1;
+    left: -37px;
+    bottom: -3px;
 }
 
 .form-labels {
