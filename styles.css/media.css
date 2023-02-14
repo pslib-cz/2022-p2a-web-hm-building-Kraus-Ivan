@@ -69,7 +69,8 @@
 
     
 .gallery__content .content__grid img{
-    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
     display: block;
 }
 
