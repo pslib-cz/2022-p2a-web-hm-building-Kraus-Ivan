@@ -560,6 +560,10 @@ footer {
     margin-bottom: 1em;
 }
 
+.form__selection {
+    font-weight: 400;
+}
+
 .contacts__description {
     display: block;
     position: relative;
