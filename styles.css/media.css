@@ -232,7 +232,6 @@
         left: 0;
         right: 0;
         height: 100%;
-        width: 100%;
         opacity: 0;
         transition: all 1s;
         background-color: rgba(235, 108, 39, 0.75);
@@ -383,7 +382,6 @@
     .confidence {
         min-height: 40vh;
         font-size: 2em;
-        line-height: 15px;
     } 
 
     .page-header__title {

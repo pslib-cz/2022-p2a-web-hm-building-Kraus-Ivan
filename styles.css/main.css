@@ -24,7 +24,7 @@ a {
 }
 
 img {
-    width: 100%;
+    width: 100%; 
     display: block;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ figure, menu, ul, p{
 nav.navigation {
     padding: 1.75em 0;
     z-index: 999;
-    width: 100%;
+    width: 100%; /* Kvůli roztažení navbaru */ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -619,7 +619,7 @@ label {
 
 input[type=text], select, textarea {
     font-weight: 800;
-    width: 100%;
+    width: 100%; /* Kvůli roztažení inputu ve formuláři */ 
     padding: 12px; 
     border: 1px solid #EB6C27;
     box-sizing: border-box; 
