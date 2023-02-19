@@ -36,8 +36,6 @@ figure, menu, ul, p {
     margin: 0;
 }
 
-
-
 nav.navigation {
     padding: 1.75em 0;
     z-index: 999;
@@ -130,6 +128,7 @@ nav.navigation {
     position: absolute;
     top: 25px;
     right: 1.5em;
+    font-weight: 400;
 }
 
 .navigation input:checked ~ .hamburger__hamburger-line{
