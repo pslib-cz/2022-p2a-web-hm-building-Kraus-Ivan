@@ -160,10 +160,11 @@ nav.navigation {
     display: none;
 }
 
-.menu__arrow {
-    display: block;
+.navigation__menu::before {
+    content: "";
     position: absolute;
     top: -1.5em;
+    display: none;
     right: 7px;
     width: 0;
     height: 0;
