@@ -298,6 +298,7 @@ nav.navigation {
 
 .services__item {
     display: flex;
+    
     flex-direction: column;
     margin-bottom: 4em;
 }

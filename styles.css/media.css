@@ -168,7 +168,7 @@
 
 @media screen and (min-width: 901px) {
     .services__item {
-        gap: 5em;
+        gap: 4em;
         flex-direction: row;
     }
 
@@ -361,6 +361,33 @@
 
 }
 
+
+@media (min-width: 1350px) {
+    .navigation {
+        max-width: 1300px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 3%;
+    }
+    .page-header {
+        min-height: 97vh;
+    }
+}
+
+@media (min-width: 1601px) {
+    .navigation {
+        max-width: 1600px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 3%;
+    }
+    .page-header {
+        min-height: 97vh;
+    }
+}
+
 @media (min-width: 1440px) { 
     .newbuildings .content__description {
         margin-right: 25vw;
@@ -399,32 +426,9 @@
     .form__title {
         font-size: 2em;
     }
-
-}
-
-@media (min-width: 1350px) {
-    .navigation {
-        max-width: 1300px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 3%;
-    }
-    .page-header {
-        min-height: 97vh;
-    }
-}
-
-@media (min-width: 1601px) {
-    .navigation {
-        max-width: 1600px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 3%;
-    }
-    .page-header {
-        min-height: 97vh;
+    .services__item {
+        gap: 7em;
+        flex-direction: row;
     }
 }
 
@@ -437,3 +441,4 @@
         min-height: 15em;
     }
 }
+
