@@ -404,10 +404,6 @@
         font-size: 6em;
     }
 
-    .confidence__content {
-        margin-left: 2em;
-    }
-
 
     .content__title {
         font-size: 4em;
@@ -442,5 +438,15 @@
     }
     .page-header {
         min-height: 97vh;
+    }
+}
+
+@media (min-width: 1920px) {
+    .services__item::before {
+        min-height: unset;
+    }
+
+    .confidence {
+        min-height: 20vh;
     }
 }
