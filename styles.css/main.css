@@ -31,7 +31,7 @@ img {
     object-fit: cover;
 }
 
-figure, menu, ul, p{
+figure, menu, ul, p {
     padding: 0;
     margin: 0;
 }
@@ -128,7 +128,7 @@ nav.navigation {
 .hamburger__hamburger-description {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 25px;
     right: 1.5em;
 }
 
