@@ -12,9 +12,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-
     color: var(--grey);
     background-color: var(--white);
 }
@@ -309,6 +306,7 @@ nav.navigation {
     display: block;
     margin: 5em 0em;
 }
+
 
 .services__item--img-communicationarea::before, .services__item--img-industrialbuildings::before, .services__item--img-newbuidlings::before, .services__item--img-reconstructions::before{
     content: '';
