@@ -314,7 +314,7 @@ nav.navigation {
 .services__item--img-communicationarea::before, .services__item--img-industrialbuildings::before, .services__item--img-newbuidlings::before, .services__item--img-reconstructions::before{
     content: '';
     display: block;
-    min-height: 15vh;
+    min-height: 10em;
     background-image: unset;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,7 +362,7 @@ nav.navigation {
     padding: 1.5em;
     color: white;
     margin-top: 2em;
-    min-height: 20vh;
+    min-height: 15em;
     padding: 1.5em;
 }
 
