@@ -1,13 +1,5 @@
 
 @media screen and (max-width: 1024px) {
-
-    .content__desktop {
-        display: none;
-    }
-    .content__mobile {
-        display: block;
-    }
-
     .navigation__menu {
         display: none;
         justify-content: start;
@@ -131,17 +123,11 @@
 
     .button--hover-main:hover {
         background-color: var(--main);
-    }
-
-    .button--hover-main:hover a {
         color: var(--white);
     }
 
     .button--hover-darkmain:hover {
         background-color: var(--darkmain);
-    }
-
-    .button--hover-darkmain:hover a {
         color: var(--white);
     }
 
@@ -260,7 +246,7 @@
         margin-top: 8em;
         display: grid;
         align-items: center;
-        grid-template-columns: 10em 0.5fr 1fr;
+        grid-template-columns: 1fr minmax(min-content, 750px) 50vw;
         grid-template-areas:
         ". contacts map"
         ". form . ";
@@ -343,7 +329,7 @@
     }
 
     .references .references__item--header .item__description {
-        max-width: 750px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -448,5 +434,9 @@
 
     .confidence {
         min-height: 20vh;
+    }
+
+    .contact__content {
+   
     }
 }

@@ -12,6 +12,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
     color: var(--grey);
     background-color: var(--white);
 }
@@ -27,6 +30,12 @@ img {
     padding: 0;
     object-fit: cover;
 }
+
+figure, menu, ul, p{
+    padding: 0;
+    margin: 0;
+}
+
 
 
 nav.navigation {
@@ -60,7 +69,7 @@ nav.navigation {
 }
 
 .navigation__menu .menu__item a {
-    padding: 2.65em 2.5em;
+    padding: 2.6em 2.5em;
     transition: 0.3s;
     font-weight: 500;
     color: var(--lightgrey);
@@ -241,7 +250,7 @@ nav.navigation {
 .page-header__button {
     display: none;
     margin-top: 2em;
-    padding: 20px 50px;
+    padding: 20px 20px;
     font-size: 1.2em;
 }
 
@@ -260,9 +269,9 @@ nav.navigation {
 }
 
 .services__item .button {
-    padding: 12px 40px;
+    padding: 12px 20px;
     color:#EB6C27;
-    width: 12em;
+    width: 8em;
     border: dashed;
     border-width: 2px;
     background-color: var(--white);
@@ -280,7 +289,6 @@ nav.navigation {
     font-weight: 400;
     font-size: 1.1rem;
     margin-bottom: 1em;
-    line-height: 23px;
     font-size: 1em;
 }
 
@@ -294,7 +302,7 @@ nav.navigation {
 .services__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .services__item--header {
@@ -309,7 +317,6 @@ nav.navigation {
     background-image: unset;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .services__item:nth-child(odd)::before{
@@ -366,13 +373,13 @@ nav.navigation {
 
 .content__description--break {
     display: block;
-    margin-top: 1.5em;
+    margin-top: 1.25em;
 }
 
 .content__button {
-    margin-top: 2em;
-    padding: 12px 40px;
-    width: 12em;
+    margin-top: 2.5em;
+    padding: 20px 40px;
+    width: 10em;
 }
 
 
@@ -406,6 +413,7 @@ nav.navigation {
     margin-right: auto;
     margin-bottom: 6em;
     padding: 15px;
+    width: 10em;
 }
 
 .overlay__title {
@@ -431,6 +439,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+    color: var(--main);
 }
 
 .footer__button a {
@@ -493,7 +502,7 @@ footer {
 .content__description{
     margin-top: 1em;
     margin-bottom: 1em;
-    line-height: 21px;
+
     font-weight: 400;
 }
 
@@ -638,8 +647,6 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
-
-
 .newbuildings,.industrialbuidlings, .communicationarea, .reconstructions {
     margin-top: 5em;
     margin-left: 1.5em;
@@ -652,7 +659,7 @@ input[type=text], select, textarea {
 }
 
 .newbuildings, .industrialbuidlings, .reconstructions, .communicationarea {
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 .communicationarea .content__list, .reconstructions .content__list {
@@ -668,7 +675,7 @@ input[type=text], select, textarea {
     color: #EB6C27; 
     font-weight: 800;
     font-size: 2em;
-    margin-left: 1.5em;
+    margin-left: 1em;
     display: inline-block;
     vertical-align: middle;
     width: 1em;
@@ -707,7 +714,7 @@ input[type=text], select, textarea {
 }
 
 .aboutus, .communicationarea, .contact, .industrialbuidlings, .newbuildings, .outsideareas, .reconstructions, .references, .washing, .gallery {
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 #reference {
