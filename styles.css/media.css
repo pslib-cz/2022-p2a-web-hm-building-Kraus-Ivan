@@ -49,6 +49,11 @@
 }
 
 
+@media (max-width: 411px) {
+    .icon-dot--position::before {
+        bottom: 5px;
+    }
+}
 
 @media (min-width: 768px) {
 

@@ -563,8 +563,10 @@ footer {
     font-weight: 400;
 }
 
+
 .contacts__description {
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
     margin-left: 3em;
     margin-top: 3em;
@@ -574,7 +576,7 @@ footer {
 }
 
 .contacts__description::before {
-    bottom: -10px;
+    
     left: -50px;
     position: absolute;
     content: '';
@@ -591,11 +593,12 @@ footer {
 }
 
 .icon-dot--phone::before {
-    top: -3px;
+    top: -2px;
     content: url("../images/local_phone_24px.svg");
 
 }
 .icon-dot--mail::before {
+    top: 2px;
     content: url("../images/mail_24px.svg");
 }
 .icon-dot--position::before {
